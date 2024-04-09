@@ -1,6 +1,8 @@
 import { message } from "antd";
 import axios from "./axios";
-const base_url = "http://116.104.51.101:8080/EduStarService/"
+// const base_url = "http://116.104.51.101:8080/EduStarService/"
+const base_url = "http://localhost:8080/"
+
 
 export const getAllDocument = async (params) => {
   const response = await fetch(`${base_url}document/all`); 

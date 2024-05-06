@@ -1,5 +1,5 @@
-// const base_url = "http://116.104.51.101:8080/EduStarService/" 
-const base_url = "http://localhost:8080/"
+const base_url = "http://116.104.51.101:8080/EduStarService/" 
+// const base_url = "http://localhost:8080/"
 
 export const getAllNews = async (params) => {
   

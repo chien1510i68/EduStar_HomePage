@@ -1,11 +1,7 @@
 
 import Cookies from "js-cookie";
 import axios from "axios";
-
-// const base_url = "https://service.edustar.com.vn"
-const base_url = "https://c9f5-2401-d800-df80-e448-4d1f-e311-1aa1-2f4a.ngrok-free.app"
-
-// const base_url = "http://localhost:8080/"
+import {base_url} from "./baseURL"
 
 
 const login_path = "/auth/login"

@@ -29,33 +29,33 @@ function page(props) {
       <p>For the purposes of this Privacy Policy:</p>
       <ul>
         <li>
-          "Account" means a unique account created for You to access our Service
+          Account means a unique account created for You to access our Service
           or parts of our Service.
         </li>
         <li>
-          "Application" means the software program provided by the Company
+          Application means the software program provided by the Company
           downloaded by You on any electronic device, named Uni Schedule
         </li>
         <li>
-          "Company" (referred to as either "the Company", "We", "Us" or "Our" in
+          Company (referred to as either the Company, We, Us or Our in
           this Agreement) refers to UCK Team
         </li>
         <li>
-          "Cookies" are small files that are placed on Your computer, mobile
+          Cookies are small files that are placed on Your computer, mobile
           device or any other device by a website, containing the details of
           Your browsing history on that website among its many uses.
         </li>
         <li>
-          "Device" means any device that can access the Service such as a
+          Device means any device that can access the Service such as a
           computer, a cell phone or a digital tablet.
         </li>
         <li>
-          "Personal Data" is any information that relates to an identified or
+          Personal Data is any information that relates to an identified or
           identifiable individual.
         </li>
-        <li>"Service" refers to the Website.</li>
+        <li>Service refers to the Website.</li>
         <li>
-          "Service Provider" means any natural or legal person who processes the
+          Service Provider means any natural or legal person who processes the
           data on behalf of the Company. It refers to third-party companies or
           individuals employed by the Company to facilitate the Service, to
           provide the Service on behalf of the Company, to perform services
@@ -63,12 +63,12 @@ function page(props) {
           Service is used.
         </li>
         <li>
-          "Usage Data" refers to data collected automatically, either generated
+          Usage Data refers to data collected automatically, either generated
           by the use of the Service or from the Service infrastructure itself
           (for example, the duration of a page visit).
         </li>
         <li>
-          "You" means the individual accessing or using the Service, or the
+          You means the individual accessing or using the Service, or the
           company, or other legal entity on behalf of which such individual is
           accessing or using the Service, as applicable.
         </li>
@@ -94,8 +94,8 @@ function page(props) {
       <h4>Usage Data</h4>
       <p>Usage Data is collected automatically when using the Service.</p>
       <p>
-        Usage Data may include information such as Your Device's Internet
-        Protocol address (e.g. IP address), browser type, browser version, the
+        Usage Data may include information such as Your Devices Internet
+        Protocol address e.g. IP address, browser type, browser version, the
         pages of our Service that You visit, the time and date of Your visit,
         the time spent on those pages, unique device identifiers and other
         diagnostic data.
@@ -125,7 +125,7 @@ function page(props) {
       <p>
         We use this information to provide features of Our Service, to improve
         and customize Our Service. The information may be uploaded to the
-        Company's servers and/or a Service Provider's server or it may be simply
+        Companys servers and/or a Service Providers server or it may be simply
         stored on Your device. You can enable or disable access to this
         information at any time, through Your Device settings.
       </p>
@@ -152,7 +152,7 @@ function page(props) {
         <li>
           To contact You: To contact You by email, telephone calls, SMS, or
           other equivalent forms of electronic communication, such as a mobile
-          application's push notifications regarding updates or informative
+          applications push notifications regarding updates or informative
           communications related to the functionalities, products or contracted
           services, including the security updates, when necessary or reasonable
           for their implementation.
@@ -222,8 +222,8 @@ function page(props) {
         The Company will retain Your Personal Data only for as long as is
         necessary for the purposes set out in this Privacy Policy. We will
         retain and use Your Personal Data to the extent necessary to comply with
-        our legal obligations (for example, if we are required to retain your
-        data to comply with applicable laws), resolve disputes, and enforce our
+        our legal obligations for example, if we are required to retain your
+        data to comply with applicable laws, resolve disputes, and enforce our
         legal agreements and policies. The Company will also retain Usage Data
         for internal analysis purposes. Usage Data is generally retained for a
         shorter period of time, except when this data is used to strengthen the
@@ -233,7 +233,7 @@ function page(props) {
 
       <h2>Transfer of Your Personal Data</h2>
       <p>
-        Your information, including Personal Data, is processed at the Company's
+        Your information, including Personal Data, is processed at the Companys
         operating offices and in any other places where the parties involved in
         the processing are located. It means that this information may be
         transferred to — and maintained on — computers located outside of Your
@@ -260,7 +260,7 @@ function page(props) {
       <p>
         Under certain circumstances, the Company may be required to disclose
         Your Personal Data if required to do so by law or in response to valid
-        requests by public authorities (e.g. a court or a government agency).
+        requests by public authorities e.g. a court or a government agency.
       </p>
       <h3>Other legal requirements</h3>
       <p>
@@ -307,7 +307,7 @@ function page(props) {
       </p>
       <p>[LIST]</p>
 
-      <h2>Children's Privacy</h2>
+      <h2>Childrens Privacy</h2>
       <p>
         Our Service does not address anyone under the age of 13. We do not
         knowingly collect personally identifiable information from anyone under
@@ -317,7 +317,7 @@ function page(props) {
         age of 13 without verification of parental consent, We take steps to
         remove that information from Our servers. If We need to rely on consent
         as a legal basis for processing Your information and Your country
-        requires consent from a parent, We may require Your parent's consent
+        requires consent from a parent, We may require Your parents consent
         before We collect and use that information.
       </p>
 
@@ -325,7 +325,7 @@ function page(props) {
       <p>
         Our Service may contain links to other websites that are not operated by
         Us. If You click on a third party link, You will be directed to that
-        third party's site. We strongly advise You to review the Privacy Policy
+        third partys site. We strongly advise You to review the Privacy Policy
         of every site You visit. We have no control over and assume no
         responsibility for the content, privacy policies or practices of any
         third party sites or services.
@@ -336,7 +336,7 @@ function page(props) {
         We may update Our Privacy Policy from time to time. We will notify You
         of any changes by posting the new Privacy Policy on this page. We will
         let You know via email and/or a prominent notice on Our Service, prior
-        to the change becoming effective and update the "Last updated" date at
+        to the change becoming effective and update the Last updated date at
         the top of this Privacy Policy. You are advised to review this Privacy
         Policy periodically for any changes. Changes to this Privacy Policy are
         effective when they are posted on this page.

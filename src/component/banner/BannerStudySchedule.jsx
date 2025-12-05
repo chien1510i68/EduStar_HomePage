@@ -17,7 +17,7 @@ async function BannerStudySchedule(props) {
         <div
           className=" grid grid-cols-5  text-white uppercase h-[54.4vh] "
           style={{
-            backgroundImage: `url(${background.image})`,
+            backgroundImage: background?.image ? `url(${background.image})` : 'none',
             backgroundSize: "cover",
           }}
         >

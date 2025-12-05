@@ -6,21 +6,34 @@ import {base_url} from "./baseURL"
 
 
 export const getAllService = async (params) => {
-  // const response = await fetch('https://service.edustar.com.vn/service/all'); 
-  const response = await fetch(`${base_url}/service/all`); 
+  try {
+    const response = await fetch(`${base_url}/service/all`, {
+      next: { revalidate: 3600 }, // Cache for 1 hour
+    }); 
     if (!response.ok) {
-      throw new Error('Failed to fetch data');
+      console.error('Failed to fetch services');
+      return { data: { items: [] } };
     }
     const data = await response.json();
     return data;
+  } catch (error) {
+    console.error('Error fetching services:', error);
+    return { data: { items: [] } };
+  }
 };
 export const getServiceById = async (id) => {
-  // const response = await fetch(`https://service.edustar.com.vn/service/${id}`); 
-  const response = await fetch(`${base_url}/service/${id}`); 
+  try {
+    const response = await fetch(`${base_url}/service/${id}`, {
+      next: { revalidate: 3600 }, // Cache for 1 hour
+    }); 
     if (!response.ok) {
-      throw new Error('Failed to fetch data');
+      console.error(`Failed to fetch service ${id}`);
+      return { data: null };
     }
     const data = await response.json();
     return data;
-  
+  } catch (error) {
+    console.error(`Error fetching service ${id}:`, error);
+    return { data: null };
+  }
 };

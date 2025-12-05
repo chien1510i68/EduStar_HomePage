@@ -33,18 +33,20 @@ async function IeltsPage(props) {
 
           <>
             <h2 className="title">Thông tin khóa học </h2>
-            <Course service={service} />
+            {service && <Course service={service} />}
           </>
 
           <>
             <h2 className="title">Lộ trình học </h2>
             <div className="flex justify-center">
-              <Image
-                src={slidebyId?.image}
-                alt="pic"
-                width={900}
-                height={423}
-              />
+              {slidebyId?.image && (
+                <Image
+                  src={slidebyId.image}
+                  alt="pic"
+                  width={900}
+                  height={423}
+                />
+              )}
             </div>
           </>
           <div className="mt-[7rem]">

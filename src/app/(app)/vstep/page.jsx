@@ -33,7 +33,7 @@ async function PageVstep(props) {
 
       <h2 className="title">Thông tin khóa học </h2>
       <div className="  grid  tablet:grid-cols-2 phone:grid-cols-1  gap-24">
-        {inforCourses.map((item, ind) => (
+        {inforCourses && inforCourses.length > 0 && inforCourses.map((item, ind) => (
           <Course item={item} key={ind} />
         ))}
       </div>

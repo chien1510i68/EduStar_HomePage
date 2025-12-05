@@ -5,6 +5,8 @@ import { AppContext } from "../AppContext/AppContext";
 import ButtonScroll from "../Button/ButtonScroll";
 
 function Course({ service }) {
+  if (!service) return null;
+  
   return (
     <div>
       <Col
@@ -12,31 +14,31 @@ function Course({ service }) {
         className=" shadow-xl rounded-[10px] overflow-hidden mx-auto"
       >
         <h2 className="uppercase text-[5rem] font-[700] py-[2rem] bg-primaryColor text-[#fff] text-center">
-          {service?.name}
+          {service?.name || 'Chưa cập nhật'}
         </h2>
         <div className="px-[5%] py-[5%]  ">
           <div className="flex my-[10px] gap-[5px] items-baseline ">
-            <h3>Trình độ đầu vào:</h3> <p>{service?.requestStudents}</p>
+            <h3>Trình độ đầu vào:</h3> <p>{service?.requestStudents || 'Chưa cập nhật'}</p>
           </div>
           <div className="flex my-[10px] gap-[5px] items-baseline ">
-            <h3>Số buổi:</h3> <p>{service?.numberTeachingSessions}</p>
+            <h3>Số buổi:</h3> <p>{service?.numberTeachingSessions || 'Chưa cập nhật'}</p>
           </div>
           <div className="flex my-[10px] gap-[5px] items-baseline ">
-            <h3>Lịch học:</h3> <p>{service?.schedule}</p>
+            <h3>Lịch học:</h3> <p>{service?.schedule || 'Chưa cập nhật'}</p>
           </div>
           <div className="flex my-[10px] gap-[5px] items-baseline ">
-            <h3>Hình thức học:</h3> <p>{service?.learningForm}</p>
+            <h3>Hình thức học:</h3> <p>{service?.learningForm || 'Chưa cập nhật'}</p>
           </div>
           <div className="flex my-[10px] gap-[5px] items-baseline ">
             <h3>Lộ trình đào tạo:</h3>
             <ul className="list-disc ml-[5%]">
-              {service?.curriculum?.map((item, subIndex) => (
+              {service?.curriculum && service.curriculum.length > 0 ? service.curriculum.map((item, subIndex) => (
                 <li key={subIndex}>{item}</li>
-              ))}
+              )) : <li>Chưa cập nhật</li>}
             </ul>
           </div>
           <div className="flex my-[10px] gap-[5px] items-baseline ">
-            {service?.description}
+            {service?.description || 'Chưa cập nhật'}
           </div>
           {/* <Button
             className="mx-auto block  bg-primaryColor custom-btn uppercase hover:text-[#fff]"

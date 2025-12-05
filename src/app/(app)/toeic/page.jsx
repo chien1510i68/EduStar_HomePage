@@ -40,28 +40,32 @@ async function PageToeic(props) {
           </div>
           <>
             <h2 className="title">Thông tin khóa học </h2>
-            <Course service={service} />
+            {service && <Course service={service} />}
           </>
 
           <div className="">
-            <img
-              src={slidebyId1?.image}
-              className="w-full "
-              alt="toeic3"
-              width={950}
-              height={347}
-            />
+            {slidebyId1?.image && (
+              <img
+                src={slidebyId1.image}
+                className="w-full "
+                alt="toeic3"
+                width={950}
+                height={347}
+              />
+            )}
           </div>
           <div>
             <h2 className="title ">Lộ trình học</h2>
             <div className="grid grid-cols-3">
-              <img
-                src={slidebyId2?.image}
-                className=" h-full w-full object-cover col-span-3"
-                alt="pic"
-                height={520}
-                width={1043}
-              />
+              {slidebyId2?.image && (
+                <img
+                  src={slidebyId2.image}
+                  className=" h-full w-full object-cover col-span-3"
+                  alt="pic"
+                  height={520}
+                  width={1043}
+                />
+              )}
             </div>
           </div>
 

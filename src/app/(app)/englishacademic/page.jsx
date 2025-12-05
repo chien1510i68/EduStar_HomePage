@@ -32,15 +32,17 @@ async function PageEnglishAcademic(props) {
         </div>
         <div>
           <h2 className="title">Thông tin khóa học </h2>
-          <Course service={service} />
+          {service && <Course service={service} />}
 
           <div className="w-[80vw] mt-[10%] border-none">
-            <img
-              src={slidebyId?.image}
-              className="w-full "
-              alt=""
-              width={800}
-            />
+            {slidebyId?.image && (
+              <img
+                src={slidebyId.image}
+                className="w-full "
+                alt=""
+                width={800}
+              />
+            )}
           </div>
 
           <div className="">

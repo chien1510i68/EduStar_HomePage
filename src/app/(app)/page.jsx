@@ -42,9 +42,9 @@ async function Home() {
         <div className="animate__animated  animate__fadeInLeft">
           <div className=" mt-[30rem] text-[#333] grid gap-12 tablet:grid-cols-2 phone:grid-cols-1">
             <div className="col-span-1">
-              <Link key={newsById22?.id} href={`new/${newsById22?.id}`}>
+              <Link key={newsById22?.id} href={`new/${newsById22?.id || ''}`}>
                 <p
-                  dangerouslySetInnerHTML={{ __html: newsById22?.content }}
+                  dangerouslySetInnerHTML={{ __html: newsById22?.content || '' }}
                   className="font-[400] line-clamp-3 pr-[5%] block  text-[4rem] text-[3.5rem] line-clamp-5 h-[49rem] overflow-hidden"
                 ></p>
                 <Button className=" ml-auto px-[6rem] h-[12rem] rounded-[12rem] bg-[#FB9400] text-[#FFFFFF] hover:text-[#e7e7e8]  hover:opacity-80 border-none hover:border-none  mr-[35rem] mt-[5rem] block">
@@ -53,19 +53,21 @@ async function Home() {
               </Link>
             </div>
             <div className="col-span-1 desktop:flex flex-row justify-end items-start   phone:hidden">
-              <Image
-                src={newsById22?.image}
-                alt="pic"
-                height={660}
-                width={458}
-              />
+              {newsById22?.image && (
+                <Image
+                  src={newsById22.image}
+                  alt="pic"
+                  height={660}
+                  width={458}
+                />
+              )}
             </div>
           </div>
         </div>
         <div className=" mt-[25rem]">
           <h2 className="title">Thế mạnh của chúng tôi</h2>
           <Row gutter={[32, 60]} className="">
-            {strengList.map((item, index) => (
+            {strengList && strengList.length > 0 && strengList.map((item, index) => (
               <Col className="mt-[5rem] " lg={8} md={12} sm={24} key={index}>
                 <StrengthDescription item={item} />
               </Col>
@@ -95,9 +97,9 @@ async function Home() {
           </h2>
           <div className=" grid tablet:grid-cols-2 gap-8 mt-[20rem] justify-around">
             <div className="col-span-1">
-              <Link key={newsById23?.id} href={`new/${newsById23?.id}`}>
+              <Link key={newsById23?.id} href={`new/${newsById23?.id || ''}`}>
                 <p
-                  dangerouslySetInnerHTML={{ __html: newsById23?.content }}
+                  dangerouslySetInnerHTML={{ __html: newsById23?.content || '' }}
                   className="font-[400] pr-[5%] block  text-[4rem] text-[3.5rem] line-clamp-5 h-[49rem] overflow-hidden"
                 ></p>
                 <Button className=" ml-auto px-[6rem] h-[12rem] rounded-[12rem] bg-[#FB9400] text-[#FFFFFF] hover:text-[#e7e7e8]  hover:opacity-80 border-none hover:border-none  mr-[35rem] mt-[5rem] block">
@@ -106,11 +108,13 @@ async function Home() {
               </Link>
             </div>
             <div className="h-[60rem] col-span-1">
-              <img
-                src={newsById23?.image}
-                alt=""
-                className="w-full h-full object-cover rounded-[20px]"
-              />
+              {newsById23?.image && (
+                <img
+                  src={newsById23.image}
+                  alt=""
+                  className="w-full h-full object-cover rounded-[20px]"
+                />
+              )}
             </div>
           </div>
         </div>

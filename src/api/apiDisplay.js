@@ -6,12 +6,20 @@ import {base_url} from "./baseURL"
 // const base_url = "http://localhost:8080/"
 
 export const getDataDisplay = async () => {
-    const response = await fetch(`${base_url}/display/all`); 
+  try {
+    const response = await fetch(`${base_url}/display/all`, {
+      next: { revalidate: 3600 }, // Cache for 1 hour
+    }); 
     if (!response.ok) {
-      throw new Error('Failed to fetch data');
+      console.error('Failed to fetch display data');
+      return { data: { items: [] } };
     }
     const data = await response.json();
     return data;
+  } catch (error) {
+    console.error('Error fetching display data:', error);
+    return { data: { items: [] } };
+  }
 };
 
 
